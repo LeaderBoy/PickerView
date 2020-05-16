@@ -158,7 +158,7 @@ public class StringPickerView: ZYPickerView {
                 if title != nil {
                     self.selectedValue[component].value = title!
                 }else{
-                    self.selectedValue[component].value = "111"
+                    self.selectedValue[component].value = ""
                 }
                 reloadPicker(row, in: component)
                 return PickerIndexPath(component: component, row: row, value: title ?? "")

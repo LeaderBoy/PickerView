@@ -13,9 +13,9 @@ public class ZYPickerView: UIView {
     public typealias DoneAction = ([PickerIndexPath]) -> Void
     
     public struct PickerIndexPath {
-        var component : Int
-        var row : Int
-        var value : String
+        public var component : Int
+        public var row : Int
+        public var value : String
     }
     
     var doneAction : DoneAction?
