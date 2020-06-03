@@ -14,7 +14,11 @@ public class DatePickerView: ZYPickerView {
     var dateDoneAction : DateDoneAction!
     private lazy var picker : UIDatePicker = {
         let picker = UIDatePicker()
-        picker.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        if #available(iOS 13.0, *) {
+            picker.backgroundColor = UIColor.systemBackground
+        } else {
+            picker.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
         return picker
     }()
     
