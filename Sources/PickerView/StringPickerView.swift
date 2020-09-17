@@ -10,8 +10,8 @@ import UIKit
 
 /// 关联的数据类型
 public struct AssociatedData {
-    var key: String
-    var valueArray: [String]?
+    public var key: String
+    public var valueArray: [String]?
     public init (key: String, valueArray: [String]? = nil) {
         self.key = key
         self.valueArray = valueArray
