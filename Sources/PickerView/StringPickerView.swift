@@ -256,7 +256,7 @@ extension StringPickerView : UIPickerViewDataSource,UIPickerViewDelegate {
         if isSingleRowData {
             return singleRowData.count
         }else if isMultiRowData{
-            return multiRowData.count
+            return multiRowData[component].count
         }else if isAssociatedRowData {
             if component == 0 {
                 return associatedRowData[component].count
