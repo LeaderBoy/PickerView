@@ -32,9 +32,9 @@ public class ZYPickerView: UIView {
     
     fileprivate lazy var toolBar : UIToolbar = {
         let tool = UIToolbar(frame: CGRect(x: 0, y:0, width: ZYPickerView.screenWidth, height: ZYPickerView.toolBarH))
-        let leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(leftButtonClicked))
+        let leftBarButtonItem = UIBarButtonItem(title: "取消", style: .plain, target: self, action: #selector(leftButtonClicked))
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let rightBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(rightButtonClicked))
+        let rightBarButtonItem = UIBarButtonItem(title: "完成", style: .plain, target: self, action: #selector(rightButtonClicked))
         tool.items = [leftBarButtonItem,space,rightBarButtonItem]
         
         if #available(iOS 13.0, *) {
